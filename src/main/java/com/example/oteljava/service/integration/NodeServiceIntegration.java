@@ -17,7 +17,7 @@ public class NodeServiceIntegration extends IntegrationService {
     }
 
     public Optional<ResponseEntity> rolldice() {
-        return request(() -> nodeClient.rolldice(), Optional::empty);
+        return request(() -> nodeClient.rolldice(5), Optional::empty);
     }
     
 }
