@@ -1,6 +1,5 @@
 package com.example.oteljava.controller;
 
-import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,7 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.oteljava.service.integration.NodeServiceIntegration;
 
 @RestController
-@EnableFeignClients
 public class AppController {
 
     private final NodeServiceIntegration nodeServiceIntegration;
