@@ -2,8 +2,6 @@ package com.example.oteljava.service.integration;
 
 import java.util.Optional;
 
-import org.aspectj.apache.bcel.classfile.Module.Open;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.example.oteljava.service.integration.client.NodeClient;
