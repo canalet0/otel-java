@@ -22,7 +22,9 @@ public class AppController {
 
     @GetMapping("/dice")
     public ResponseEntity dice() {
-        return nodeServiceIntegration.rolldice().orElseGet(ResponseEntity.notFound()::build);
+        return nodeServiceIntegration.rolldice()
+                .map(ResponseEntity::ok)
+                .orElseGet(ResponseEntity.notFound()::build);
     }
     
 }
